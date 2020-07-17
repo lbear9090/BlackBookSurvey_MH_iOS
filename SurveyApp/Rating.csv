@@ -1,0 +1,4 @@
+ratingId;ratingName;parentId;level;isOptional;deleted
+1;Vender of technology, platform or software;0;0;0;0
+2;vendor of managed services or outsourced processes;0;0;0;0
+3;consultant or advisor;0;0;0;0

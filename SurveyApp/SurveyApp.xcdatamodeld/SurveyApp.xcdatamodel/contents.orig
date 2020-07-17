@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+=======
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+>>>>>>> vendors
+    <entity name="CDOrganizationType" representedClassName="CDOrganizationType" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isOptional" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizationTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizationTypeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDPreferences" representedClassName="CDPreferences" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferenceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferenceText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDQuestions" representedClassName="CDQuestions" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optionCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionFormat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userResponse" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDRating" representedClassName="CDRating" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ratingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ratingName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDRoles" representedClassName="CDRoles" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roleName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDScoreMatrix" representedClassName="CDScoreMatrix" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matrixDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matrixTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scoreMatrixId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startRange" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDSurveyResponse" representedClassName="CDSurveyResponse" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="responseText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyResponseId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDSurveys" representedClassName="CDSurveys" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizationTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scoreMatrixId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyScoreObtained" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vendorId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDSurveyType" representedClassName="CDSurveyType" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyTypeName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDVendors" representedClassName="CDVendors" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vendorId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vendorName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDOrganizationType" positionX="-27" positionY="54" width="128" height="165"/>
+        <element name="CDPreferences" positionX="-36" positionY="63" width="128" height="120"/>
+        <element name="CDQuestions" positionX="-549" positionY="63" width="128" height="193"/>
+        <element name="CDRating" positionX="-342" positionY="135" width="128" height="150"/>
+        <element name="CDRoles" positionX="-18" positionY="45" width="128" height="150"/>
+        <element name="CDScoreMatrix" positionX="-27" positionY="72" width="128" height="165"/>
+        <element name="CDSurveyResponse" positionX="-27" positionY="117" width="128" height="148"/>
+        <element name="CDSurveys" positionX="-18" positionY="126" width="128" height="240"/>
+        <element name="CDSurveyType" positionX="-54" positionY="9" width="128" height="150"/>
+        <element name="CDVendors" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

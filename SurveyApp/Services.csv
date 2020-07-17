@@ -1,0 +1,267 @@
+surveyTypeId;surveyTypeName;level;parentId;deleted
+1;Accountable Care;0;0;0
+2;Ambulatory Electronic Health Records;0;0;0
+3;Analytics;0;0;0
+4;Ancillary Department Systems;0;0;0
+5;Bar Code Solutions;0;0;0
+6;Clinical Decision Support;0;0;0
+7;Cloud Computing;0;0;0
+8;Coding, Documentation Improvement, ICD-10;0;0;0
+9;Continuum Of Care;0;0;0
+10;Financial Systems & Services;0;0;0
+11;Hardware;0;0;0
+12;Health Information Management;0;0;0
+13;HIE & Interoperability;0;0;0
+14;Human Resources;0;0;0
+15;Image Management;0;0;0
+16;Inpatient Electronic Health Records;0;0;0
+17;Integration Tools;0;0;0
+18;IT Consulting;0;0;0
+19;Management Consulting;0;0;0
+20;Mobile Healthcare;0;0;0
+21;Network Solutions;0;0;0
+22;Nursing Applications;0;0;0
+23;Outsourcing;0;0;0
+24;Population Health;0;0;0
+25;Practice Management;0;0;0
+26;Privacy & Security;0;0;0
+27;Revenue Cycle Management;0;0;0
+28;Supply Chain;0;0;0
+29;Technical Support;0;0;0
+30;Telemedicine;0;0;0
+31;Clinical Data Integration;1;1;0
+32;Contract Management;1;1;0
+33;HIPAA EDI Compliance;1;1;0
+34;Risk Based Payment Solutions;1;1;0
+35;Allergy & Immunology;1;2;0
+36;Ambulatory Surgery Centers;1;2;0
+37;Cardiology;1;2;0
+38;Chiropractics;1;2;0
+39;Clinical Workflow & Encounter Management;1;2;0
+40;Dermatology;1;2;0
+41;Electronic Prescribing ;1;2;0
+42;Emergency Medicine;1;2;0
+43;Endocrinology;1;2;0
+44;Gastroenterology;1;2;0
+45;General Surgery;1;2;0
+46;Geriatrics;1;2;0
+47;Home Health EHR;1;2;0
+48;Independent Practice Associations;1;2;0
+49;Infectious Disease;1;2;0
+50;Integrated EHR/Practice Mgmt/Billing;1;2;0
+51;Internal Medicine;1;2;0
+52;Interoperability, Communications & Connectivity;1;2;0
+53;Ipad & Mobile Device EHR;1;2;0
+54;Long Term Care EHR;1;2;0
+55;Nephrology;1;2;0
+56;Neurology;1;2;0
+57;Neurosurgery;1;2;0
+58;Obstetrics Gynecology Reproductive Medicine;1;2;0
+59;Oncology & Hematology;1;2;0
+60;Ophthalmology;1;2;0
+61;Orthopedic Surgery, Hand Surgey, Spine Surgery;1;2;0
+62;Osteopathic Physicians;1;2;0
+63;Otorhinolaryngology ENT;1;2;0
+64;Pain Management;1;2;0
+65;Patient Health Data Management & Administrative Processing;1;2;0
+66;Pediatric Surgery;1;2;0
+67;Pediatrics;1;2;0
+68;Physical Medicine & Rehab;1;2;0
+69;Plastic Surgery;1;2;0
+70;Podiatry;1;2;0
+71;Primary Care;1;2;0
+72;Psychiatry;1;2;0
+73;Pulmonary & Sleep;1;2;0
+74;Rheumatoloty;1;2;0
+75;Sports Medicine;1;2;0
+76;Urgent Care & Occupational Medicine;1;2;0
+77;Urology;1;2;0
+78;Analytics Managed Services;1;3;0
+79;Analytics Software;1;3;0
+80;Cardiology Information Systems;1;4;0
+81;Dietary Information Systems;1;4;0
+82;Emergency Department;1;4;0
+83;GI/Endoscopy Systems;1;4;0
+84;Infection Control Systems;1;4;0
+85;Intensive Care/Critical Care Software;1;4;0
+86;Laboratory Information Systems;1;4;0
+87;Long Term Care Information Systems;1;4;0
+88;Obstetrics Information Systems;1;4;0
+89;Operating Room Systems;1;4;0
+90;Opthalmology Information Systems;1;4;0
+91;Pharmacy Management Systems;1;4;0
+92;Radiology Information Systems;1;4;0
+93;Rehab Information Systems;1;4;0
+94;Respiratory Care Information Systems;1;4;0
+95;Logistics/Supply Chain;1;5;0
+96;Medical Device Management ;1;5;0
+97;Medication Management/Pharmacy;1;5;0
+98;Patient Identification;1;5;0
+99;Clinical Management Decision Support;1;6;0
+100;Diagnostic Decision Support;1;6;0
+101;Medication Decision Support;1;6;0
+102;Outcomes & Quality Management Support;1;6;0
+103;Preventive Decision Support;1;6;0
+104;Surgical Decision Support;1;6;0
+105;Cloud Outsourcing;1;7;0
+106;Clinical Documentation Improvement Software/Technology;1;8;0
+107;Coding Software/Technology;1;8;0
+108;Coding, Billing & Contracting Consultants & Advisors;1;8;0
+109;Computer Assisted Coding Services & Medical Records Outsourcing;1;8;0
+110;Transcription Outsourcing ;1;8;0
+111;Patient Satisfaction;1;9;0
+112;Accountable Care Organization Financial Software & Services;1;10;0
+113;Accounts Payable;1;10;0
+114;Accounts Receivable;1;10;0
+115;Benchmarking And Performance Measurement;1;10;0
+116;Budgeting;1;10;0
+117;Business Decision Support Software;1;10;0
+118;Business Intelligence Dashboards;1;10;0
+119;Capital And Equipment Planning Software;1;10;0
+120;Cfo & Board Strategic Advisory Consultants ? Finance;1;10;0
+121;Charge Capture & Charge Master Tooks;1;10;0
+122;Claims Management/Clearinghouse;1;10;0
+123;Collections Outsourcing & Accounts Receivables Debt;1;10;0
+124;Cost Accounting;1;10;0
+125;Denial Management/Third Party Recovery;1;10;0
+126;Early Out/Self Pay Solutions;1;10;0
+127;Emergency Department;1;10;0
+128;End-To-End Coding, Speech Recognition, Medical Records Solutions;1;10;0
+129;Enterprise Master Patient Index Tools;1;10;0
+130;Enterprise Resource Planning Software;1;10;0
+131;Enterprise Scheduling Software;1;10;0
+132;Financial Analytics;1;10;0
+133;Financial Documentation & Content Management Solutions;1;10;0
+134;HIM Coding Medical Records;1;10;0
+135;Hospital Accounting & Audit Outsourcing Firms;1;10;0
+136;Hospital Patient Accounting ;1;10;0
+137;Icd 10 Software Solutions;1;10;0
+138;Insurance & Payer Eligibility Verification Solutions;1;10;0
+139;Managed Care Payment/Reimbursement Solutions;1;10;0
+140;Medical Transcription Services Outsourcing;1;10;0
+141;Operational Budgeting & Forecasting Software;1;10;0
+142;Patient Accounting ? Large Hospitals;1;10;0
+143;Patient Portals;1;10;0
+144;Physician Data Portals;1;10;0
+145;Predictive Provider Analytics;1;10;0
+146;Supply Chain & Asset Inventory Management Software;1;10;0
+147;Time & Attendance Software ? Hospitals;1;10;0
+148;Time & Payer Contract Management;1;10;0
+149;Servers & Mainframes;1;11;0
+150;Wireless Solutions;1;11;0
+151;Abstracting;1;12;0
+152;Case Mix Management;1;12;0
+153;Coding Systems;1;12;0
+154;Data Warehousing/ Mining;1;12;0
+155;Dictation/Speech Recognition;1;12;0
+156;Document Management;1;12;0
+157;Transcription;1;12;0
+158;Complex Data Aggregators & Outsourcing Firms HIEs;1;13;0
+159;Core HIE Systems Private HIEs;1;13;0
+160;EHR-Centric HIEs;1;13;0
+161;Payer & Commercial Insurers Centric HIEs;1;13;0
+162;Public & Government Sponsored HIEs;1;13;0
+163;Benefits Administration;1;14;0
+164;Executive Recruitment, Management Staffing;1;14;0
+165;Interim Administration Staffing;1;14;0
+166;Staff Scheduling;1;14;0
+167;Time & Attendance  ;1;14;0
+168;Workforce Management Solutions;1;14;0
+169;Enterprise Image Management & Archiving;1;15;0
+170;Hosted Storage Solutions;1;15;0
+171;PACS;1;15;0
+172;Electronic Prescribing ;1;16;0
+173;Emergency Department;1;16;0
+174;Hospital;1;16;0
+175;Hospitalists;1;16;0
+176;Electronic Data Interchange;1;17;0
+177;EMPI;1;17;0
+178;IHE Adaptors;1;17;0
+179;Integration Engines;1;17;0
+180;Interface Development & Management;1;17;0
+181;Record Locator Services;1;17;0
+182;Single Sign-On;1;17;0
+183;Web Integration Tools;1;17;0
+184;Application Training & Competency;1;18;0
+185;Business Continuity & Disaster Recovery;1;18;0
+186;Business Intelligence;1;18;0
+187;Clinical & Business Intelligence;1;18;0
+188;Clinical Quality, Protocols & Outcomes;1;18;0
+189;Clinical Systems Implementation;1;18;0
+190;Document & Imagine Storage/Recovery;1;18;0
+191;Financial Systems Implementation;1;18;0
+192;Hit Portfolio Risk & Gap Analysis;1;18;0
+193;Interoperability, Communications & Connectivity;1;18;0
+194;Privacy & Security;1;18;0
+195;Process Engineering;1;18;0
+196;Project Management;1;18;0
+197;Strategic & Product Planning;1;18;0
+198;Testing Services;1;18;0
+199;Vendor Selection;1;18;0
+200;Coding Icd10 Documentation Improvement;1;19;0
+201;Human Resources  ;1;19;0
+202;Meaningful Use;1;19;0
+203;Regulatory & Compliance;1;19;0
+204;Revenue Cycle;1;19;0
+205;Value Based Care;1;19;0
+206;Application Development;1;20;0
+207;Mobile Healthcare Tools;1;20;0
+208;Mobile Privacy & Security;1;20;0
+209;Wireless Solutions;1;21;0
+210;Acuity;1;22;0
+211;Staffing/Scheduling;1;22;0
+212;Aco Outsourced Management;1;23;0
+213;Big Data Management & Analytics Outsourcing;1;23;0
+214;Billing;1;23;0
+215;Claims Management;1;23;0
+216;Claims Management & Modernization;1;23;0
+217;Coding Icd10 Documentation Improvement Outsourcing;1;23;0
+218;Health Insurance Exchange Support Outsourcing;1;23;0
+219;Help Desk;1;23;0
+220;Hospital Management;1;23;0
+221;Housekeeping, Food Services, Maintenance;1;23;0
+222;Human Resources Services;1;23;0
+223;Information Technology, Full;1;23;0
+224;Information Technology, Partial;1;23;0
+225;Marketing & Sales Outsourcing;1;23;0
+226;Member Services & Contact Center Outsourcing;1;23;0
+227;Population Health Solution Development;1;23;0
+228;Provider & Network Management Outsourcing;1;23;0
+229;Revenue Cycle Management ;1;23;0
+230;Security Solution Development;1;23;0
+231;Transcription ;1;23;0
+232;Transformational AO IO;1;23;0
+233;Utilization Management Outsourcing;1;23;0
+234;Analytics;1;24;0
+235;Care Coordination;1;24;0
+236;Patient Engagement;1;24;0
+237;Physician Practice Management Systems;1;25;0
+238;Digital Rights Management;1;26;0
+239;Privacy Protection;1;26;0
+240;Risk Management;1;26;0
+241;Security Soltions;1;26;0
+242;ADT/Registration;1;27;0
+243;Claims Management Consultants & Advisors;1;27;0
+244;Claims Management Systems;1;27;0
+245;Claims Processing/Clearinghouse;1;27;0
+246;Contract Management;1;27;0
+247;Credit/Collections;1;27;0
+248;Hospital Revenue Cycle Management Outsourcing;1;27;0
+249;Patient Access & Registration Consultants & Advisors;1;27;0
+250;Patient Scheduling;1;27;0
+251;Physician Practice EHR RCM Software/Saas/Technology;1;27;0
+252;Physician Practice RCM Outsourcing Managed Services;1;27;0
+253;Receivables & Collections Consultants & Advisors;1;27;0
+254;Revenue Cycle Management Software/SaaS/RCM Technology;1;27;0
+255;Asset Tracking & Management;1;28;0
+256;Construction Management;1;28;0
+257;Facilities Design;1;28;0
+258;Group Purchasing;1;28;0
+259;Materials Management/Strategic Sourcing;1;28;0
+260;Supply Chain Technologies;1;28;0
+261;Telecommunications;1;28;0
+262;Inpatient EHR-Centric;1;29;0
+263;Outsourced Tech Support;1;29;0
+264;EICU;1;30;0
+265;Telemedicine Solutions;1;30;0
+266;Other;1;2;0
