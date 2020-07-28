@@ -43,7 +43,7 @@
 		801073F61C97E93A00D098C7 /* _CDSurveyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 801073F31C97E93A00D098C7 /* _CDSurveyType.m */; };
 		801073F71C97E93A00D098C7 /* CDSurveyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 801073F51C97E93A00D098C7 /* CDSurveyType.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		80115ADE1C8ED79B00D1BFDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80115ADD1C8ED79B00D1BFDB /* main.m */; };
-		80115AEA1C8ED79B00D1BFDB /* SurveyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80115AE81C8ED79B00D1BFDB /* SurveyApp.xcdatamodeld */; };
+		80115AEA1C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80115AE81C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld */; };
 		80115AEC1C8ED79B00D1BFDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80115AEB1C8ED79B00D1BFDB /* Assets.xcassets */; };
 		80115AFF1C8ED82B00D1BFDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80115AFC1C8ED82B00D1BFDB /* AppDelegate.m */; };
 		8012C1281CAB95290011FC6E /* TrueSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 8012C1271CAB95290011FC6E /* TrueSample.png */; };
@@ -168,7 +168,7 @@
 		801073F31C97E93A00D098C7 /* _CDSurveyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CDSurveyType.m; sourceTree = "<group>"; };
 		801073F41C97E93A00D098C7 /* CDSurveyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSurveyType.h; sourceTree = "<group>"; };
 		801073F51C97E93A00D098C7 /* CDSurveyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSurveyType.m; sourceTree = "<group>"; };
-		80115AD91C8ED79B00D1BFDB /* BlackBook Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlackBook Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80115AD91C8ED79B00D1BFDB /* Medical Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medical Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80115ADD1C8ED79B00D1BFDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80115AE91C8ED79B00D1BFDB /* SurveyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurveyApp.xcdatamodel; sourceTree = "<group>"; };
 		80115AEB1C8ED79B00D1BFDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 		80115ADA1C8ED79B00D1BFDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80115AD91C8ED79B00D1BFDB /* BlackBook Survey.app */,
+				80115AD91C8ED79B00D1BFDB /* Medical Survey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 				8040916D1C8EE27B007357B7 /* SurveyApp-Prefix.pch */,
 				80115AEB1C8ED79B00D1BFDB /* Assets.xcassets */,
 				80115AF01C8ED79B00D1BFDB /* Info.plist */,
-				80115AE81C8ED79B00D1BFDB /* SurveyApp.xcdatamodeld */,
+				80115AE81C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld */,
 				80115ADD1C8ED79B00D1BFDB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -671,9 +671,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80115AD81C8ED79B00D1BFDB /* SurveyApp */ = {
+		80115AD81C8ED79B00D1BFDB /* SurveyAppMH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80115AF31C8ED79B00D1BFDB /* Build configuration list for PBXNativeTarget "SurveyApp" */;
+			buildConfigurationList = 80115AF31C8ED79B00D1BFDB /* Build configuration list for PBXNativeTarget "SurveyAppMH" */;
 			buildPhases = (
 				4D1E58F923AFB9747501825C /* [CP] Check Pods Manifest.lock */,
 				80115AD51C8ED79B00D1BFDB /* Sources */,
@@ -685,9 +685,9 @@
 			);
 			dependencies = (
 			);
-			name = SurveyApp;
+			name = SurveyAppMH;
 			productName = SurveyApp;
-			productReference = 80115AD91C8ED79B00D1BFDB /* BlackBook Survey.app */;
+			productReference = 80115AD91C8ED79B00D1BFDB /* Medical Survey.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -719,7 +719,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80115AD81C8ED79B00D1BFDB /* SurveyApp */,
+				80115AD81C8ED79B00D1BFDB /* SurveyAppMH */,
 			);
 		};
 /* End PBXProject section */
@@ -841,7 +841,7 @@
 				809931A91C92A4FC003C5FE2 /* CSVParser.m in Sources */,
 				8045039A1CC4A7620080F5CE /* NSData+Base64.m in Sources */,
 				809931AC1C92ED34003C5FE2 /* ExtendedVC.m in Sources */,
-				80115AEA1C8ED79B00D1BFDB /* SurveyApp.xcdatamodeld in Sources */,
+				80115AEA1C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld in Sources */,
 				804091631C8EE1A4007357B7 /* NSString+Extensions.m in Sources */,
 				80086CBB1C9AB4990057AE05 /* _CDSurveys.m in Sources */,
 				801073E61C97C86000D098C7 /* Roles.m in Sources */,
@@ -1010,7 +1010,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackbook.surveyappmh;
-				PRODUCT_NAME = "BlackBook Survey";
+				PRODUCT_NAME = "Medical Survey";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -1040,7 +1040,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackbook.surveyappmh;
-				PRODUCT_NAME = "BlackBook Survey";
+				PRODUCT_NAME = "Medical Survey";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -1058,7 +1058,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80115AF31C8ED79B00D1BFDB /* Build configuration list for PBXNativeTarget "SurveyApp" */ = {
+		80115AF31C8ED79B00D1BFDB /* Build configuration list for PBXNativeTarget "SurveyAppMH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80115AF41C8ED79B00D1BFDB /* Debug */,
@@ -1070,13 +1070,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		80115AE81C8ED79B00D1BFDB /* SurveyApp.xcdatamodeld */ = {
+		80115AE81C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				80115AE91C8ED79B00D1BFDB /* SurveyApp.xcdatamodel */,
 			);
 			currentVersion = 80115AE91C8ED79B00D1BFDB /* SurveyApp.xcdatamodel */;
-			path = SurveyApp.xcdatamodeld;
+			path = "Medical Survey.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

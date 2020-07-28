@@ -24,7 +24,7 @@
 
 #include "Questions.h"
 
-#define SERVER_URL @"http://s618129727.onlinehome.us/blackbooksurvey/api/Webservice.php"
+#define SERVER_URL @"http://s618129727.onlinehome.us/blackbooksurveymh/api/Webservice.php"
 
 #define WSGetPredefinedData             [NSString stringWithFormat:@"%@?Service=getPredefinedData", SERVER_URL]
 #define WSGetSurveyType                 [NSString stringWithFormat:@"%@?Service=getSurveyType", SERVER_URL]

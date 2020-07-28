@@ -35,7 +35,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb225687495455053</string>
+				<string>fb758158201425173</string>
 			</array>
 		</dict>
 		<dict>
@@ -50,19 +50,19 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.blackbook.surveyapp</string>
+			<string>com.blackbook.surveyappmh</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.blackbook.surveyapp</string>
+				<string>com.blackbook.surveyappmh</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
-	<string>225687495455053</string>
+	<string>758158201425173</string>
 	<key>FacebookDisplayName</key>
-	<string>Black Book Research</string>
+	<string>Med Surg Satisfaction Survey</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LIAppId</key>
