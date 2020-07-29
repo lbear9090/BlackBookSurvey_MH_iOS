@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "80115AD81C8ED79B00D1BFDB"
-               BuildableName = "BlackBook Medical.app"
+               BuildableName = "Medical Survey.app"
                BlueprintName = "SurveyAppMH"
                ReferencedContainer = "container:SurveyApp.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80115AD81C8ED79B00D1BFDB"
-            BuildableName = "BlackBook Medical.app"
+            BuildableName = "Medical Survey.app"
             BlueprintName = "SurveyAppMH"
             ReferencedContainer = "container:SurveyApp.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80115AD81C8ED79B00D1BFDB"
-            BuildableName = "BlackBook Medical.app"
+            BuildableName = "Medical Survey.app"
             BlueprintName = "SurveyAppMH"
             ReferencedContainer = "container:SurveyApp.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80115AD81C8ED79B00D1BFDB"
-            BuildableName = "BlackBook Medical.app"
+            BuildableName = "Medical Survey.app"
             BlueprintName = "SurveyAppMH"
             ReferencedContainer = "container:SurveyApp.xcodeproj">
          </BuildableReference>
