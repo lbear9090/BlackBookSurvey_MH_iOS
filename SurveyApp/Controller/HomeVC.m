@@ -42,7 +42,7 @@
     [super viewDidLoad];
     
     [self setupNavigation];
-    linkedinHelper = [[LinkedinSwiftHelper alloc] initWithConfiguration: [[LinkedinSwiftConfiguration alloc] initWithClientId:@"78i3tvz9gostz5" clientSecret:@"1DI6u1EhB2jUq3HJ" state:@"20200511" permissions:@[@"r_liteprofile", @"r_emailaddress"] redirectUrl:@"http://localhost:3000/auth/linkedin/callback"] nativeAppChecker:[[WebLoginOnly alloc] init]];
+    linkedinHelper = [[LinkedinSwiftHelper alloc] initWithConfiguration: [[LinkedinSwiftConfiguration alloc] initWithClientId:LINKEDIN_CLIENT_ID clientSecret:LINKEDIN_CLIENT_SECRET state:@"20200728" permissions:@[@"r_liteprofile", @"r_emailaddress"] redirectUrl:@"http://localhost:3000/auth/linkedin/callback"] nativeAppChecker:[[WebLoginOnly alloc] init]];
 
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(btnFacebookLogin:)];
     tap.numberOfTapsRequired = 1;
@@ -274,7 +274,7 @@
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsLinkedinLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsFacebookLogin];
     
-    [[FHSTwitterEngine sharedEngine]permanentlySetConsumerKey:@"p3synMX4pCPc2Bp7eTqs5wuWG" andSecret:@"ifpaPJZFinCuxstx8GTsr43WH3kYkwxitz6VFbcKZg1NzOH6Qx"];
+    [[FHSTwitterEngine sharedEngine]permanentlySetConsumerKey:TWITTER_CONSUMER_API_KEY andSecret:TWITTER_CONSUMER_API_SECRET_KEY];
     [[FHSTwitterEngine sharedEngine]setDelegate:self];
     UIViewController *loginController = [[FHSTwitterEngine sharedEngine]loginControllerWithCompletionHandler:^(BOOL success) {
         NSLog(success?@"L0L success":@"O noes!!! Loggen faylur!!!");

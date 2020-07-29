@@ -16,7 +16,7 @@
 
 #import "FHSTwitterEngine.h"
 
-static NSString * const kClientId = @"30757229116-ftitsek7m3rgmepssus0u2okrg1i7mja.apps.googleusercontent.com";
+static NSString * const kClientId = @"688992366945-4nde42cphb4045u9m81i2d0vhg03lqc0.apps.googleusercontent.com";
 
 //@interface HomeVC : UIViewController<GPPSignInDelegate, FHSTwitterEngineAccessTokenDelegate>
 @interface HomeVC : UIViewController<FHSTwitterEngineAccessTokenDelegate, GIDSignInDelegate>

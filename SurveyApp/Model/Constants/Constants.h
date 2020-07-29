@@ -108,4 +108,8 @@
 #define kVendorsURL         @"http://blackbookmarketresearch.com/directory"
 #define kScoringKeyURL      @"http://blackbookmarketresearch.com/methodology#qualitative"
 
+#define LINKEDIN_CLIENT_ID @"869zacejh2bxzp"
+#define LINKEDIN_CLIENT_SECRET @"Lrlt7tsbB67DZg38"
+#define TWITTER_CONSUMER_API_KEY @"EePRG9I4O4XC6veJivfAN3sHi"
+#define TWITTER_CONSUMER_API_SECRET_KEY @"kSkjfdC3sc3FWlzVYkEsYbsLhUa99H2q0Fsg4hsQz3OcrAZwNh"
 #endif /* Constants_h */
