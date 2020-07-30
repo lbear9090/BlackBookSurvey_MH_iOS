@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05023B5724D2C7D800EA8D7B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05023B5624D2C7D800EA8D7B /* WebKit.framework */; };
+		05023B6B24D326F000EA8D7B /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B6824D326F000EA8D7B /* FHSStream.m */; };
+		05023B6C24D326F000EA8D7B /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */; };
+		05023B8724D331DA00EA8D7B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05023B6E24D331DA00EA8D7B /* LICENSE */; };
+		05023B8824D331DA00EA8D7B /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05023B6F24D331DA00EA8D7B /* linkedin-sdk.framework */; };
+		05023B8924D331DA00EA8D7B /* LinkedinSwiftConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7524D331DA00EA8D7B /* LinkedinSwiftConfiguration.m */; };
+		05023B8A24D331DA00EA8D7B /* LSLinkedinToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7724D331DA00EA8D7B /* LSLinkedinToken.m */; };
+		05023B8B24D331DA00EA8D7B /* LSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7924D331DA00EA8D7B /* LSResponse.m */; };
+		05023B8C24D331DA00EA8D7B /* LinkedinNativeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7B24D331DA00EA8D7B /* LinkedinNativeClient.m */; };
+		05023B8D24D331DA00EA8D7B /* LinkedinOAuthWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7D24D331DA00EA8D7B /* LinkedinOAuthWebClient.m */; };
+		05023B8E24D331DA00EA8D7B /* LinkedinSwiftHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B7F24D331DA00EA8D7B /* LinkedinSwiftHelper.m */; };
+		05023B8F24D331DA00EA8D7B /* NativeAppInstalledChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B8324D331DA00EA8D7B /* NativeAppInstalledChecker.m */; };
+		05023B9024D331DA00EA8D7B /* WebLoginOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B8524D331DA00EA8D7B /* WebLoginOnly.m */; };
+		05023B9124D331DA00EA8D7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05023B8624D331DA00EA8D7B /* README.md */; };
 		05FF04572440BAEE00AF5418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF04552440BAEE00AF5418 /* LaunchScreen.storyboard */; };
 		05FF04582440BAEE00AF5418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF04562440BAEE00AF5418 /* Main.storyboard */; };
 		1E66B1A81D682B4100DE7938 /* VendorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E66B1A71D682B4100DE7938 /* VendorCell.m */; };
@@ -19,6 +33,7 @@
 		3A1DED661FD95D7B00954540 /* Rating.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A1DED5C1FD94C4B00954540 /* Rating.csv */; };
 		3A8357731FE39EE000EFB863 /* SubmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8357721FE39EE000EFB863 /* SubmitVC.m */; };
 		3A8357761FE3A34D00EFB863 /* ExitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8357751FE3A34D00EFB863 /* ExitVC.m */; };
+		78FBC22460D6186E8EB3B885 /* libPods-SurveyAppMH.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD7689C8F5642428917261 /* libPods-SurveyAppMH.a */; };
 		8005BC1A1C900786007D4AFE /* RegistrationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005BC191C900786007D4AFE /* RegistrationVC.m */; };
 		8005BC1E1C9019C8007D4AFE /* UITextField+TextPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005BC1D1C9019C8007D4AFE /* UITextField+TextPadding.m */; };
 		8005BC2F1C90430E007D4AFE /* ExpandableTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005BC2E1C90430E007D4AFE /* ExpandableTableVC.m */; };
@@ -97,10 +112,35 @@
 		80EBC3971CCB281600BA8029 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EBC3961CCB281600BA8029 /* MessageUI.framework */; };
 		80FC77B41C96908200A5B615 /* MISDropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FC77B11C96908200A5B615 /* MISDropdownMenuView.m */; };
 		80FC77B51C96908200A5B615 /* MISDropdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FC77B31C96908200A5B615 /* MISDropdownViewController.m */; };
-		B5634A5452F3513C3A9F532D /* libPods-SurveyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520055506DEA0DC74E130935 /* libPods-SurveyApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05023B5624D2C7D800EA8D7B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		05023B6724D326F000EA8D7B /* FHSStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
+		05023B6824D326F000EA8D7B /* FHSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
+		05023B6924D326F000EA8D7B /* FHSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		05023B6E24D331DA00EA8D7B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		05023B6F24D331DA00EA8D7B /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		05023B7424D331DA00EA8D7B /* LinkedinSwiftConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinSwiftConfiguration.h; sourceTree = "<group>"; };
+		05023B7524D331DA00EA8D7B /* LinkedinSwiftConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinSwiftConfiguration.m; sourceTree = "<group>"; };
+		05023B7624D331DA00EA8D7B /* LSLinkedinToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLinkedinToken.h; sourceTree = "<group>"; };
+		05023B7724D331DA00EA8D7B /* LSLinkedinToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLinkedinToken.m; sourceTree = "<group>"; };
+		05023B7824D331DA00EA8D7B /* LSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResponse.h; sourceTree = "<group>"; };
+		05023B7924D331DA00EA8D7B /* LSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSResponse.m; sourceTree = "<group>"; };
+		05023B7A24D331DA00EA8D7B /* LinkedinNativeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinNativeClient.h; sourceTree = "<group>"; };
+		05023B7B24D331DA00EA8D7B /* LinkedinNativeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinNativeClient.m; sourceTree = "<group>"; };
+		05023B7C24D331DA00EA8D7B /* LinkedinOAuthWebClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinOAuthWebClient.h; sourceTree = "<group>"; };
+		05023B7D24D331DA00EA8D7B /* LinkedinOAuthWebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinOAuthWebClient.m; sourceTree = "<group>"; };
+		05023B7E24D331DA00EA8D7B /* LinkedinSwiftHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinSwiftHelper.h; sourceTree = "<group>"; };
+		05023B7F24D331DA00EA8D7B /* LinkedinSwiftHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinSwiftHelper.m; sourceTree = "<group>"; };
+		05023B8024D331DA00EA8D7B /* LSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHeader.h; sourceTree = "<group>"; };
+		05023B8124D331DA00EA8D7B /* LSTypesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTypesHeader.h; sourceTree = "<group>"; };
+		05023B8224D331DA00EA8D7B /* NativeAppInstalledChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAppInstalledChecker.h; sourceTree = "<group>"; };
+		05023B8324D331DA00EA8D7B /* NativeAppInstalledChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppInstalledChecker.m; sourceTree = "<group>"; };
+		05023B8424D331DA00EA8D7B /* WebLoginOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoginOnly.h; sourceTree = "<group>"; };
+		05023B8524D331DA00EA8D7B /* WebLoginOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoginOnly.m; sourceTree = "<group>"; };
+		05023B8624D331DA00EA8D7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05FF04552440BAEE00AF5418 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05FF04562440BAEE00AF5418 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E66B1A61D682B4100DE7938 /* VendorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorCell.h; sourceTree = "<group>"; };
@@ -121,7 +161,7 @@
 		3A8357721FE39EE000EFB863 /* SubmitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitVC.m; sourceTree = "<group>"; };
 		3A8357741FE3A34D00EFB863 /* ExitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExitVC.h; sourceTree = "<group>"; };
 		3A8357751FE3A34D00EFB863 /* ExitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExitVC.m; sourceTree = "<group>"; };
-		520055506DEA0DC74E130935 /* libPods-SurveyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SurveyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DD7689C8F5642428917261 /* libPods-SurveyAppMH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SurveyAppMH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0171F03226B044ABBF5659 /* Pods-SurveyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyApp.debug.xcconfig"; path = "Target Support Files/Pods-SurveyApp/Pods-SurveyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8005BC181C900786007D4AFE /* RegistrationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationVC.h; sourceTree = "<group>"; };
 		8005BC191C900786007D4AFE /* RegistrationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationVC.m; sourceTree = "<group>"; };
@@ -269,7 +309,9 @@
 		80FC77B11C96908200A5B615 /* MISDropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISDropdownMenuView.m; sourceTree = "<group>"; };
 		80FC77B21C96908200A5B615 /* MISDropdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISDropdownViewController.h; sourceTree = "<group>"; };
 		80FC77B31C96908200A5B615 /* MISDropdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISDropdownViewController.m; sourceTree = "<group>"; };
+		85B3CA86F2D4F0DE568A97B6 /* Pods-SurveyAppMH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyAppMH.release.xcconfig"; path = "Target Support Files/Pods-SurveyAppMH/Pods-SurveyAppMH.release.xcconfig"; sourceTree = "<group>"; };
 		D28459A1E75FC7BAEB84E141 /* Pods-SurveyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyApp.release.xcconfig"; path = "Target Support Files/Pods-SurveyApp/Pods-SurveyApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA8D1361367714CB3FA98E63 /* Pods-SurveyAppMH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyAppMH.debug.xcconfig"; path = "Target Support Files/Pods-SurveyAppMH/Pods-SurveyAppMH.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,13 +320,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EBC3971CCB281600BA8029 /* MessageUI.framework in Frameworks */,
-				B5634A5452F3513C3A9F532D /* libPods-SurveyApp.a in Frameworks */,
+				78FBC22460D6186E8EB3B885 /* libPods-SurveyAppMH.a in Frameworks */,
+				05023B5724D2C7D800EA8D7B /* WebKit.framework in Frameworks */,
+				05023B8824D331DA00EA8D7B /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05023B6624D326F000EA8D7B /* FHSTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				05023B6724D326F000EA8D7B /* FHSStream.h */,
+				05023B6824D326F000EA8D7B /* FHSStream.m */,
+				05023B6924D326F000EA8D7B /* FHSTwitterEngine.h */,
+				05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */,
+			);
+			path = FHSTwitterEngine;
+			sourceTree = "<group>";
+		};
+		05023B6D24D331DA00EA8D7B /* LinkedinSwift */ = {
+			isa = PBXGroup;
+			children = (
+				05023B6E24D331DA00EA8D7B /* LICENSE */,
+				05023B6F24D331DA00EA8D7B /* linkedin-sdk.framework */,
+				05023B7024D331DA00EA8D7B /* LinkedinSwift */,
+				05023B8624D331DA00EA8D7B /* README.md */,
+			);
+			path = LinkedinSwift;
+			sourceTree = "<group>";
+		};
+		05023B7024D331DA00EA8D7B /* LinkedinSwift */ = {
+			isa = PBXGroup;
+			children = (
+				05023B7124D331DA00EA8D7B /* LinkedinSwift */,
+			);
+			path = LinkedinSwift;
+			sourceTree = "<group>";
+		};
+		05023B7124D331DA00EA8D7B /* LinkedinSwift */ = {
+			isa = PBXGroup;
+			children = (
+				05023B7224D331DA00EA8D7B /* sources */,
+			);
+			path = LinkedinSwift;
+			sourceTree = "<group>";
+		};
+		05023B7224D331DA00EA8D7B /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				05023B7324D331DA00EA8D7B /* Entities */,
+				05023B7A24D331DA00EA8D7B /* LinkedinNativeClient.h */,
+				05023B7B24D331DA00EA8D7B /* LinkedinNativeClient.m */,
+				05023B7C24D331DA00EA8D7B /* LinkedinOAuthWebClient.h */,
+				05023B7D24D331DA00EA8D7B /* LinkedinOAuthWebClient.m */,
+				05023B7E24D331DA00EA8D7B /* LinkedinSwiftHelper.h */,
+				05023B7F24D331DA00EA8D7B /* LinkedinSwiftHelper.m */,
+				05023B8024D331DA00EA8D7B /* LSHeader.h */,
+				05023B8124D331DA00EA8D7B /* LSTypesHeader.h */,
+				05023B8224D331DA00EA8D7B /* NativeAppInstalledChecker.h */,
+				05023B8324D331DA00EA8D7B /* NativeAppInstalledChecker.m */,
+				05023B8424D331DA00EA8D7B /* WebLoginOnly.h */,
+				05023B8524D331DA00EA8D7B /* WebLoginOnly.m */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		05023B7324D331DA00EA8D7B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				05023B7424D331DA00EA8D7B /* LinkedinSwiftConfiguration.h */,
+				05023B7524D331DA00EA8D7B /* LinkedinSwiftConfiguration.m */,
+				05023B7624D331DA00EA8D7B /* LSLinkedinToken.h */,
+				05023B7724D331DA00EA8D7B /* LSLinkedinToken.m */,
+				05023B7824D331DA00EA8D7B /* LSResponse.h */,
+				05023B7924D331DA00EA8D7B /* LSResponse.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		05FF04542440BAEE00AF5418 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +414,8 @@
 			children = (
 				7B0171F03226B044ABBF5659 /* Pods-SurveyApp.debug.xcconfig */,
 				D28459A1E75FC7BAEB84E141 /* Pods-SurveyApp.release.xcconfig */,
+				DA8D1361367714CB3FA98E63 /* Pods-SurveyAppMH.debug.xcconfig */,
+				85B3CA86F2D4F0DE568A97B6 /* Pods-SurveyAppMH.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -443,6 +560,8 @@
 		80115AF91C8ED82B00D1BFDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05023B6D24D331DA00EA8D7B /* LinkedinSwift */,
+				05023B6624D326F000EA8D7B /* FHSTwitterEngine */,
 				80115AFA1C8ED82B00D1BFDB /* AppDelegate */,
 				804503951CC4A7620080F5CE /* Base64 */,
 				8040914C1C8EE1A4007357B7 /* Constants */,
@@ -474,8 +593,9 @@
 		80115B001C8ED84200D1BFDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05023B5624D2C7D800EA8D7B /* WebKit.framework */,
 				80EBC3961CCB281600BA8029 /* MessageUI.framework */,
-				520055506DEA0DC74E130935 /* libPods-SurveyApp.a */,
+				66DD7689C8F5642428917261 /* libPods-SurveyAppMH.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -732,6 +852,7 @@
 				8099318E1C9294F9003C5FE2 /* Organizations.csv in Resources */,
 				1E66B1AA1D682B5500DE7938 /* VendorCell.xib in Resources */,
 				804091A01C8EF4DF007357B7 /* SFUIText-Semibold.ttf in Resources */,
+				05023B9124D331DA00EA8D7B /* README.md in Resources */,
 				8012C1281CAB95290011FC6E /* TrueSample.png in Resources */,
 				801073E81C97CBD700D098C7 /* Vendors.csv in Resources */,
 				8040919D1C8EF4DF007357B7 /* SFUIText-Light.ttf in Resources */,
@@ -743,6 +864,7 @@
 				80C2D4271CAD3353001B26C7 /* Preferences.csv in Resources */,
 				8099318F1C9294F9003C5FE2 /* Roles.csv in Resources */,
 				80C2D4291CAD3D2D001B26C7 /* Questions.csv in Resources */,
+				05023B8724D331DA00EA8D7B /* LICENSE in Resources */,
 				8040919E1C8EF4DF007357B7 /* SFUIText-Medium.ttf in Resources */,
 				8040919B1C8EF4DF007357B7 /* SFUIText-Bold.ttf in Resources */,
 				809931901C9294F9003C5FE2 /* Services.csv in Resources */,
@@ -760,15 +882,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SurveyApp/Pods-SurveyApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SurveyAppMH/Pods-SurveyAppMH-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SurveyApp/Pods-SurveyApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SurveyAppMH/Pods-SurveyAppMH-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurveyApp/Pods-SurveyApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurveyAppMH/Pods-SurveyAppMH-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4D1E58F923AFB9747501825C /* [CP] Check Pods Manifest.lock */ = {
@@ -786,7 +908,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SurveyApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SurveyAppMH-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -807,8 +929,10 @@
 				804F19F61C9978B0001837C9 /* _CDScoreMatrix.m in Sources */,
 				804091A31C8EF60F007357B7 /* StartSurveyVC.m in Sources */,
 				801073F01C97D5D800D098C7 /* _CDOrganizationType.m in Sources */,
+				05023B6C24D326F000EA8D7B /* FHSTwitterEngine.m in Sources */,
 				8045039B1CC4A7620080F5CE /* NSString+Base64.m in Sources */,
 				800E09D71CA28E05007CB290 /* Country.m in Sources */,
+				05023B8A24D331DA00EA8D7B /* LSLinkedinToken.m in Sources */,
 				80892B521C91A2FE00BC5CB2 /* WebServiceConnector.m in Sources */,
 				8012C1341CABD9F10011FC6E /* ScoreVC.m in Sources */,
 				80086CBD1C9AB4990057AE05 /* CDSurveys.m in Sources */,
@@ -816,12 +940,15 @@
 				3A8357761FE3A34D00EFB863 /* ExitVC.m in Sources */,
 				804F19F81C9978B0001837C9 /* CDScoreMatrix.m in Sources */,
 				3A1DED651FD9541D00954540 /* CDRating.m in Sources */,
+				05023B9024D331DA00EA8D7B /* WebLoginOnly.m in Sources */,
 				8005BC1E1C9019C8007D4AFE /* UITextField+TextPadding.m in Sources */,
 				804F19E01C992E4B001837C9 /* SurveyType.m in Sources */,
 				3A1DED621FD952A300954540 /* _CDRating.m in Sources */,
 				801073F71C97E93A00D098C7 /* CDSurveyType.m in Sources */,
+				05023B8924D331DA00EA8D7B /* LinkedinSwiftConfiguration.m in Sources */,
 				804503941CC49E440080F5CE /* ProfileVC.m in Sources */,
 				8046C09F1C9FCD050053ED83 /* OtherCell.m in Sources */,
+				05023B8C24D331DA00EA8D7B /* LinkedinNativeClient.m in Sources */,
 				80892B531C91A2FE00BC5CB2 /* WebServiceDataAdaptor.m in Sources */,
 				804F19EA1C99385C001837C9 /* Surveys.m in Sources */,
 				804091641C8EE1A4007357B7 /* NetworkAvailability.m in Sources */,
@@ -831,11 +958,13 @@
 				80086CA51C9A6B170057AE05 /* _CDQuestions.m in Sources */,
 				8040916C1C8EE227007357B7 /* HomeVC.m in Sources */,
 				8005BC1A1C900786007D4AFE /* RegistrationVC.m in Sources */,
+				05023B8D24D331DA00EA8D7B /* LinkedinOAuthWebClient.m in Sources */,
 				80892B541C91A2FE00BC5CB2 /* WebServiceResponse.m in Sources */,
 				801073C51C97C36300D098C7 /* Vendors.m in Sources */,
 				80892B4A1C91A1EC00BC5CB2 /* NSManagedObject+CoreDataActive.m in Sources */,
 				801073EB1C97D51000D098C7 /* OrganizationType.m in Sources */,
 				80892B481C91A1EC00BC5CB2 /* CoreDataAdaptor.m in Sources */,
+				05023B8E24D331DA00EA8D7B /* LinkedinSwiftHelper.m in Sources */,
 				804F19EB1C99385C001837C9 /* User.m in Sources */,
 				80086CA61C9A6B170057AE05 /* CDQuestions.m in Sources */,
 				809931A91C92A4FC003C5FE2 /* CSVParser.m in Sources */,
@@ -845,6 +974,7 @@
 				804091631C8EE1A4007357B7 /* NSString+Extensions.m in Sources */,
 				80086CBB1C9AB4990057AE05 /* _CDSurveys.m in Sources */,
 				801073E61C97C86000D098C7 /* Roles.m in Sources */,
+				05023B8B24D331DA00EA8D7B /* LSResponse.m in Sources */,
 				80115ADE1C8ED79B00D1BFDB /* main.m in Sources */,
 				3A8357731FE39EE000EFB863 /* SubmitVC.m in Sources */,
 				801073F61C97E93A00D098C7 /* _CDSurveyType.m in Sources */,
@@ -852,11 +982,13 @@
 				804091621C8EE1A4007357B7 /* Function.m in Sources */,
 				80892B491C91A1EC00BC5CB2 /* CoreDataHelper.m in Sources */,
 				8014C25E1C9131BF00521E06 /* QuestionsVC.m in Sources */,
+				05023B6B24D326F000EA8D7B /* FHSStream.m in Sources */,
 				8005BC2F1C90430E007D4AFE /* ExpandableTableVC.m in Sources */,
 				80FC77B41C96908200A5B615 /* MISDropdownMenuView.m in Sources */,
 				801073DD1C97C6BB00D098C7 /* _CDRoles.m in Sources */,
 				801073E11C97C6BB00D098C7 /* CDRoles.m in Sources */,
 				8014C2611C914D4500521E06 /* ScoringKeyVC.m in Sources */,
+				05023B8F24D331DA00EA8D7B /* NativeAppInstalledChecker.m in Sources */,
 				3A1DED5B1FD93D9900954540 /* PrivacyPolicyVC.m in Sources */,
 				801073CA1C97C61200D098C7 /* _CDVendors.m in Sources */,
 				804F19DE1C992E4B001837C9 /* Preferences.m in Sources */,
@@ -988,19 +1120,37 @@
 		};
 		80115AF41C8ED79B00D1BFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B0171F03226B044ABBF5659 /* Pods-SurveyApp.debug.xcconfig */;
+			baseConfigurationReference = DA8D1361367714CB3FA98E63 /* Pods-SurveyAppMH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FPSA3FLFU4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SurveyApp/Model/LinkedinSwift",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SurveyApp/Model",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ASValueTrackingSlider\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMAppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/RGSColorSlider\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/TPKeyboardAvoiding\"",
 				);
 				INFOPLIST_FILE = SurveyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1008,7 +1158,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackbook.surveyappmh;
 				PRODUCT_NAME = "Medical Survey";
 				PROVISIONING_PROFILE = "";
@@ -1018,19 +1168,37 @@
 		};
 		80115AF51C8ED79B00D1BFDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D28459A1E75FC7BAEB84E141 /* Pods-SurveyApp.release.xcconfig */;
+			baseConfigurationReference = 85B3CA86F2D4F0DE568A97B6 /* Pods-SurveyAppMH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FPSA3FLFU4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SurveyApp/Model/LinkedinSwift",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SurveyApp/Model",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ASValueTrackingSlider\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMAppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/RGSColorSlider\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/TPKeyboardAvoiding\"",
 				);
 				INFOPLIST_FILE = SurveyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1038,7 +1206,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackbook.surveyappmh;
 				PRODUCT_NAME = "Medical Survey";
 				PROVISIONING_PROFILE = "";

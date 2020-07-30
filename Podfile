@@ -3,16 +3,16 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'SurveyApp' do
+target 'SurveyAppMH' do
   pod 'SVProgressHUD'
   pod 'TPKeyboardAvoiding'
   #pod 'google-plus-ios-sdk', '~> 1.7.1'
-  pod 'FHSTwitterEngine'
+  #pod 'FHSTwitterEngine'
   pod 'RGSColorSlider'
   pod 'ASValueTrackingSlider'
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'
-  pod 'FBSDKShareKit'
+  pod 'FBSDKCoreKit', '6.5.2'
+  pod 'FBSDKLoginKit', '6.5.2'
+  pod 'FBSDKShareKit', '6.5.2'
   pod 'GoogleSignIn'
   pod 'Reachability'
   pod 'AFNetworking', '3.1.0'
