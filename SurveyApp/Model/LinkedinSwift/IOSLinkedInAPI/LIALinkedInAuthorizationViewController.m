@@ -21,21 +21,21 @@
 // THE SOFTWARE.
 #import "LIALinkedInAuthorizationViewController.h"
 #import "NSString+LIAEncode.h"
-
+#import <WebKit/WebKit.h>
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 NSString *kLinkedInErrorDomain = @"LIALinkedInERROR";
 NSString *kLinkedInDeniedByUser = @"the+user+denied+your+request";
 
 @interface LIALinkedInAuthorizationViewController ()
-@property(nonatomic, strong) UIWebView *authenticationWebView;
+@property(nonatomic, strong) WKWebView *authenticationWebView;
 @property(nonatomic, copy) LIAAuthorizationCodeFailureCallback failureCallback;
 @property(nonatomic, copy) LIAAuthorizationCodeSuccessCallback successCallback;
 @property(nonatomic, copy) LIAAuthorizationCodeCancelCallback cancelCallback;
 @property(nonatomic, strong) LIALinkedInApplication *application;
 @end
 
-@interface LIALinkedInAuthorizationViewController (UIWebViewDelegate) <UIWebViewDelegate>
+@interface LIALinkedInAuthorizationViewController (WKNavigationDelegate) <WKNavigationDelegate>
 
 @end
 
@@ -65,9 +65,9 @@ BOOL handlingRedirectURL;
 	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(tappedCancelButton:)];
 	self.navigationItem.leftBarButtonItem = cancelButton;
 
-  self.authenticationWebView = [[UIWebView alloc] init];
-  self.authenticationWebView.delegate = self;
-  self.authenticationWebView.scalesPageToFit = YES;
+  self.authenticationWebView = [[WKWebView alloc] init];
+  self.authenticationWebView.navigationDelegate = self;
+//  self.authenticationWebView.scalesPageToFit = YES;
   [self.view addSubview:self.authenticationWebView];
 }
 
@@ -92,12 +92,12 @@ BOOL handlingRedirectURL;
 
 @end
 
-@implementation LIALinkedInAuthorizationViewController (UIWebViewDelegate)
+@implementation LIALinkedInAuthorizationViewController (WKNavigationDelegate)
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    NSURL *requestURL = [request URL];
-    NSString *url = [requestURL absoluteString];
-
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    NSURL *requestURL = navigationAction.request.URL;
+    NSString *url = [requestURL query];
+    
     //prevent loading URL if it is the redirectURL
     handlingRedirectURL = [url hasPrefix:self.application.redirectURL];
 
@@ -127,7 +127,12 @@ BOOL handlingRedirectURL;
             }
         }
     }
-    return !handlingRedirectURL;
+    
+    if(!handlingRedirectURL){
+        decisionHandler(WKNavigationActionPolicyAllow);
+    }else{
+        decisionHandler(WKNavigationActionPolicyCancel);
+    }
 }
 
 - (NSString *)extractGetParameter: (NSString *) parameterName fromURL:(NSURL *)url {
@@ -141,9 +146,14 @@ BOOL handlingRedirectURL;
     }
     return [mdQueryStrings objectForKey:parameterName];
 }
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    // Turn off network activity indicator upon failure to load web view
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-
+    if (!handlingRedirectURL)
+        self.failureCallback(error);
+}
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
     // Turn off network activity indicator upon failure to load web view
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
@@ -151,25 +161,25 @@ BOOL handlingRedirectURL;
         self.failureCallback(error);
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     // Turn off network activity indicator upon finishing web view load
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
-	/*fix for the LinkedIn Auth window - it doesn't scale right when placed into
-	 a webview inside of a form sheet modal. If we transform the HTML of the page
-	 a bit, and fix the viewport to 540px (the width of the form sheet), the problem
-	 is solved.
-	*/
-	if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-		NSString* js =
-		@"var meta = document.createElement('meta'); "
-		@"meta.setAttribute( 'name', 'viewport' ); "
-		@"meta.setAttribute( 'content', 'width = 540px, initial-scale = 1.0, user-scalable = yes' ); "
-		@"document.getElementsByTagName('head')[0].appendChild(meta)";
-		
-		[webView stringByEvaluatingJavaScriptFromString: js];
-	}
+    /*fix for the LinkedIn Auth window - it doesn't scale right when placed into
+     a webview inside of a form sheet modal. If we transform the HTML of the page
+     a bit, and fix the viewport to 540px (the width of the form sheet), the problem
+     is solved.
+    */
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSString* js =
+        @"var meta = document.createElement('meta'); "
+        @"meta.setAttribute( 'name', 'viewport' ); "
+        @"meta.setAttribute( 'content', 'width = 540px, initial-scale = 1.0, user-scalable = yes' ); "
+        @"document.getElementsByTagName('head')[0].appendChild(meta)";
+        [webView evaluateJavaScript:js completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+            
+        }];
+    }
 }
 
 @end
