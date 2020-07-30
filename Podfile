@@ -16,6 +16,5 @@ target 'SurveyAppMH' do
   pod 'GoogleSignIn'
   pod 'Reachability'
   pod 'AFNetworking'
-  pod 'IOSLinkedInAPIFix'
-  pod 'LinkedinSwift'
+  #pod 'LinkedinSwift'
 end

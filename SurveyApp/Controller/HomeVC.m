@@ -16,7 +16,7 @@
 #import "StartSurveyVC.h"
 #import "RegistrationVC.h"
 #import "PrivacyPolicyVC.h"
-#import <LSHeader.h>
+#import "LSHeader.h"
 
 @interface HomeVC ()
 {
