@@ -2411,23 +2411,21 @@ id removeNull(id rootObject) {
 }
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    if (navigationAction.navigationType == UIWebViewNavigationTypeLinkClicked) {
 
-    }else{
-        NSString *url = [navigationAction.request.URL query];
-        if (url != nil && strstr([url UTF8String], "denied=")) {
-            [self dismissViewControllerAnimated:YES completion:nil];
-            decisionHandler(WKNavigationActionPolicyCancel);
-        }
-
-        NSData *data = navigationAction.request.HTTPBody;
-        char *raw = data?(char *)[data bytes]:"";
-
-        if (raw && (strstr(raw, "cancel=") || strstr(raw, "deny="))) {
-            [self close];
-            decisionHandler(WKNavigationActionPolicyCancel);
-        }
+    NSString *url = [navigationAction.request.URL query];
+    if (url != nil && strstr([url UTF8String], "denied=")) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+        decisionHandler(WKNavigationActionPolicyCancel);
     }
+
+    NSData *data = navigationAction.request.HTTPBody;
+    char *raw = data?(char *)[data bytes]:"";
+
+    if (raw && (strstr(raw, "cancel=") || strstr(raw, "deny="))) {
+        [self close];
+        decisionHandler(WKNavigationActionPolicyCancel);
+    }
+
 
     decisionHandler(WKNavigationActionPolicyAllow);
 }

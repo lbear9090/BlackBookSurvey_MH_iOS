@@ -15,6 +15,7 @@ target 'SurveyAppMH' do
   pod 'FBSDKShareKit', '6.5.2'
   pod 'GoogleSignIn'
   pod 'Reachability'
-  pod 'AFNetworking', '3.1.0'
+  pod 'AFNetworking'
+  pod 'IOSLinkedInAPIFix'
   pod 'LinkedinSwift'
 end
