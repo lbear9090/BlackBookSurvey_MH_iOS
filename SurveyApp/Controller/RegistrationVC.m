@@ -141,7 +141,7 @@
     {
          if (!self.isGuest) {
         
-        if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin])
+        if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsAppleLogin])
 
         txtName.text = [Function getStringValueFromUserDefaults_ForKey:@"facebookName"];
         txtEmail.text = [Function getStringValueFromUserDefaults_ForKey:@"facebookEmail"];
@@ -349,7 +349,7 @@
     
     if ([[NetworkAvailability instance] isReachable])
     {
-        if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin])
+        if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin] || [Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsAppleLogin])
         {
             if ([Function getStringValueFromUserDefaults_ForKey:kUID].length > 0) {
                 [postDictionary setObject:[Function getStringValueFromUserDefaults_ForKey:kUID] forKey:@"userID"];
@@ -569,6 +569,8 @@
         [postDictionary setObject:[Function getStringValueFromUserDefaults_ForKey:kFacebookID] forKey:@"twitterID"];
     }else if ([Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin]){
         [postDictionary setObject:[Function getStringValueFromUserDefaults_ForKey:kFacebookID] forKey:@"linkedinID"];
+    }else if ([Function getBooleanValueFromUserDefaults_ForKey:kIsAppleLogin]){
+        [postDictionary setObject:[Function getStringValueFromUserDefaults_ForKey:kFacebookID] forKey:@"appleID"];
     }else{
         [postDictionary setObject:[Function getStringValueFromUserDefaults_ForKey:kFacebookID] forKey:@"facebookID"];
     }

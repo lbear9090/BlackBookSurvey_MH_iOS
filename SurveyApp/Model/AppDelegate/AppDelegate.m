@@ -13,7 +13,7 @@
 //#import <GooglePlus/GooglePlus.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import <linkedin-sdk/LISDK.h>
-#import "LSHeader.h"
+#import <LinkedinSwift/LSHeader.h>
 @interface AppDelegate ()
 
 @end

@@ -16,9 +16,9 @@
 #import "StartSurveyVC.h"
 #import "RegistrationVC.h"
 #import "PrivacyPolicyVC.h"
-#import "LSHeader.h"
-
-@interface HomeVC ()
+#import <LinkedinSwift/LSHeader.h>
+#import <AuthenticationServices/AuthenticationServices.h>
+@interface HomeVC () <ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding>
 {
     ACAccountStore *accountStore;
     ACAccount *facebookAccount;
@@ -34,7 +34,7 @@
 @implementation HomeVC
 
 @synthesize btnFacebookLogin, btnGoogleLogin, btnTwitterLogin, btnLinkedinLogin;
-
+NSString* const setCurrentIdentifier = @"setCurrentIdentifier";
 #pragma mark - View Life Cycle
 
 - (void)viewDidLoad
@@ -140,6 +140,7 @@
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsTwitterLogin];
     [Function setBooleanValueToUserDefaults:YES ForKey:kIsLinkedinLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsFacebookLogin];
+    [Function setBooleanValueToUserDefaults:NO ForKey:kIsAppleLogin];
     
     [linkedinHelper authorizeSuccess:^(LSLinkedinToken * _Nonnull token) {
         [SVProgressHUD showWithStatus:@"Fetching Data"];
@@ -159,7 +160,7 @@
                 
                 NSMutableDictionary *postDictionary = [NSMutableDictionary new];
                 
-                [postDictionary setObject:linkedinID forKey:@"facebookID"];
+                [postDictionary setObject:linkedinID forKey:@"linkedinID"];
                                 
                 if ([[NetworkAvailability instance] isReachable])
                 {
@@ -187,7 +188,8 @@
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsTwitterLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsLinkedinLogin];
     [Function setBooleanValueToUserDefaults:YES ForKey:kIsFacebookLogin];
-
+    [Function setBooleanValueToUserDefaults:NO ForKey:kIsAppleLogin];
+    
     self.isFb = true;
     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     [loginManager logInWithPermissions:@[@"public_profile", @"email"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult * _Nullable result, NSError * _Nullable error) {
@@ -244,7 +246,8 @@
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsTwitterLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsLinkedinLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsFacebookLogin];
-
+    [Function setBooleanValueToUserDefaults:NO ForKey:kIsAppleLogin];
+    
     [[GIDSignIn sharedInstance] signIn];
     
 //    if ([[GPPSignIn sharedInstance] authentication]) {
@@ -273,6 +276,7 @@
     [Function setBooleanValueToUserDefaults:YES ForKey:kIsTwitterLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsLinkedinLogin];
     [Function setBooleanValueToUserDefaults:NO ForKey:kIsFacebookLogin];
+    [Function setBooleanValueToUserDefaults:NO ForKey:kIsAppleLogin];
     
     [[FHSTwitterEngine sharedEngine]permanentlySetConsumerKey:TWITTER_CONSUMER_API_KEY andSecret:TWITTER_CONSUMER_API_SECRET_KEY];
     [[FHSTwitterEngine sharedEngine]setDelegate:self];
@@ -289,19 +293,19 @@
                 NSLog(@"%@",userID);
             }
             
-                NSMutableDictionary *postDictionary = [NSMutableDictionary new];
-                [postDictionary setObject:ID forKey:@"twitterID"];
+            NSMutableDictionary *postDictionary = [NSMutableDictionary new];
+            [postDictionary setObject:ID forKey:@"twitterID"];
                 
             if (userName.length > 0) {
                     [Function setStringValueToUserDefaults:userName ForKey:@"facebookName"];
             }
             
-                [Function setStringValueToUserDefaults:@"" ForKey:@"facebookEmail"];
-            
-                if ([[NetworkAvailability instance] isReachable])
-                {
-                    [[WebServiceConnector alloc] init:WSCheckExistingUser withParameters:postDictionary withObject:self withSelector:@selector(getCheckExistingUserResponse:) forServiceType:@"JSON" showDisplayMsg:nil];
-                }
+            [Function setStringValueToUserDefaults:@"" ForKey:@"facebookEmail"];
+        
+            if ([[NetworkAvailability instance] isReachable])
+            {
+                [[WebServiceConnector alloc] init:WSCheckExistingUser withParameters:postDictionary withObject:self withSelector:@selector(getCheckExistingUserResponse:) forServiceType:@"JSON" showDisplayMsg:nil];
+            }
         }
         if (ID.length > 0) {
             NSString *userID = [NSString stringWithFormat:@"%@",ID];
@@ -314,6 +318,27 @@
         NSLog(success?@"L0L success":@"O noes!!! Log in failure!!!");
     }];
     [self presentViewController:loginController animated:YES completion:nil];
+}
+- (IBAction)btnAppleSignIn:(id)sender {
+    if (@available(iOS 13.0, *)) {
+        self.isFb = false;
+        [Function setBooleanValueToUserDefaults:NO ForKey:kIsGoogleLogin];
+        [Function setBooleanValueToUserDefaults:NO ForKey:kIsTwitterLogin];
+        [Function setBooleanValueToUserDefaults:NO ForKey:kIsLinkedinLogin];
+        [Function setBooleanValueToUserDefaults:NO ForKey:kIsFacebookLogin];
+        [Function setBooleanValueToUserDefaults:YES ForKey:kIsAppleLogin];
+        
+        ASAuthorizationAppleIDProvider *appleIDProvider = [[ASAuthorizationAppleIDProvider alloc] init];
+        ASAuthorizationAppleIDRequest *request = [appleIDProvider createRequest];
+        request.requestedScopes = @[ASAuthorizationScopeFullName, ASAuthorizationScopeEmail];
+        ASAuthorizationController *controller = [[ASAuthorizationController alloc] initWithAuthorizationRequests:@[request]];
+        controller.delegate = self;
+        controller.presentationContextProvider = self;
+        [controller performRequests];
+    }else{
+        
+    }
+    
 }
 
 - (IBAction)privacyPolicyAndTearmsOfUse:(id)sender
@@ -328,6 +353,79 @@
     [self.navigationController pushViewController:privacyPolicyVC animated:YES];
 
 }
+
+#pragma mark - Apple Signin
+- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization  API_AVAILABLE(ios(13.0)){
+    
+    if ([authorization.credential isKindOfClass:[ASAuthorizationAppleIDCredential class]]) {
+        // ASAuthorizationAppleIDCredential
+        ASAuthorizationAppleIDCredential *appleIDCredential = authorization.credential;
+        NSString *user = appleIDCredential.user;
+        [[NSUserDefaults standardUserDefaults] setValue:user forKey:setCurrentIdentifier];
+        NSString *familyName = appleIDCredential.fullName.familyName;
+        NSString *givenName = appleIDCredential.fullName.givenName;
+        NSString *email = appleIDCredential.email;
+        
+        [SVProgressHUD dismiss];
+        
+        [Function setStringValueToUserDefaults:email ForKey:@"facebookEmail"];
+        [Function setStringValueToUserDefaults:[NSString stringWithFormat:@"%@ %@", familyName, givenName] ForKey:@"facebookName"];
+        [Function setStringValueToUserDefaults:user ForKey:kFacebookID];
+        
+        NSMutableDictionary *postDictionary = [NSMutableDictionary new];
+        
+        [postDictionary setObject:user forKey:@"appleID"];
+                        
+        if ([[NetworkAvailability instance] isReachable])
+        {
+            [[WebServiceConnector alloc] init:WSCheckExistingUser withParameters:postDictionary withObject:self withSelector:@selector(getCheckExistingUserResponse:) forServiceType:@"JSON" showDisplayMsg:nil];
+        }
+    } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
+        ASPasswordCredential *passwordCredential = authorization.credential;
+//        NSString *user = passwordCredential.user;
+//        NSString *password = passwordCredential.password;
+        
+    } else {
+         
+    }
+}
+ 
+
+- (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  API_AVAILABLE(ios(13.0)){
+    
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"error ：%@", error);
+    NSString *errorMsg = nil;
+    switch (error.code) {
+        case ASAuthorizationErrorCanceled:
+            errorMsg = @"ASAuthorizationErrorCanceled";
+            break;
+        case ASAuthorizationErrorFailed:
+            errorMsg = @"ASAuthorizationErrorFailed";
+            break;
+        case ASAuthorizationErrorInvalidResponse:
+            errorMsg = @"ASAuthorizationErrorInvalidResponse";
+            break;
+        case ASAuthorizationErrorNotHandled:
+            errorMsg = @"ASAuthorizationErrorNotHandled";
+            break;
+        case ASAuthorizationErrorUnknown:
+            errorMsg = @"ASAuthorizationErrorUnknown";
+            break;
+    }
+    
+    if (errorMsg) {
+        return;
+    }
+}
+ 
+//! Tells the delegate from which window it should present content to the user.
+ - (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller  API_AVAILABLE(ios(13.0)){
+    
+    NSLog(@"window：%s", __FUNCTION__);
+    return self.view.window;
+}
+
 #pragma mark - Webservice Response Methods
 
 - (IBAction)getCheckExistingUserResponse:(id)sender

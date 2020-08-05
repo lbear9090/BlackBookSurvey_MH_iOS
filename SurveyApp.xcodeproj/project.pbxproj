@@ -10,19 +10,7 @@
 		05023B5724D2C7D800EA8D7B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05023B5624D2C7D800EA8D7B /* WebKit.framework */; };
 		05023B6B24D326F000EA8D7B /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B6824D326F000EA8D7B /* FHSStream.m */; };
 		05023B6C24D326F000EA8D7B /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */; };
-		05023C2E24D346CF00EA8D7B /* LIALinkedInApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1224D346CF00EA8D7B /* LIALinkedInApplication.m */; };
-		05023C2F24D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1424D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.m */; };
-		05023C3024D346CF00EA8D7B /* LIALinkedInHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1624D346CF00EA8D7B /* LIALinkedInHttpClient.m */; };
-		05023C3124D346CF00EA8D7B /* NSString+LIAEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1824D346CF00EA8D7B /* NSString+LIAEncode.m */; };
-		05023C3224D346CF00EA8D7B /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05023C1924D346CF00EA8D7B /* linkedin-sdk.framework */; };
-		05023C3324D346CF00EA8D7B /* LinkedinSwiftConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1D24D346CF00EA8D7B /* LinkedinSwiftConfiguration.m */; };
-		05023C3424D346CF00EA8D7B /* LSLinkedinToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C1F24D346CF00EA8D7B /* LSLinkedinToken.m */; };
-		05023C3524D346CF00EA8D7B /* LSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2124D346CF00EA8D7B /* LSResponse.m */; };
-		05023C3624D346CF00EA8D7B /* LinkedinNativeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2324D346CF00EA8D7B /* LinkedinNativeClient.m */; };
-		05023C3724D346CF00EA8D7B /* LinkedinOAuthWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2524D346CF00EA8D7B /* LinkedinOAuthWebClient.m */; };
-		05023C3824D346CF00EA8D7B /* LinkedinSwiftHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2724D346CF00EA8D7B /* LinkedinSwiftHelper.m */; };
-		05023C3924D346CF00EA8D7B /* NativeAppInstalledChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2B24D346CF00EA8D7B /* NativeAppInstalledChecker.m */; };
-		05023C3A24D346CF00EA8D7B /* WebLoginOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 05023C2D24D346CF00EA8D7B /* WebLoginOnly.m */; };
+		054C89AC24D8016600B4CADE /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C89AB24D8016600B4CADE /* AuthenticationServices.framework */; };
 		05FF04572440BAEE00AF5418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF04552440BAEE00AF5418 /* LaunchScreen.storyboard */; };
 		05FF04582440BAEE00AF5418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF04562440BAEE00AF5418 /* Main.storyboard */; };
 		1E66B1A81D682B4100DE7938 /* VendorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E66B1A71D682B4100DE7938 /* VendorCell.m */; };
@@ -122,33 +110,8 @@
 		05023B6824D326F000EA8D7B /* FHSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
 		05023B6924D326F000EA8D7B /* FHSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
 		05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
-		05023C1124D346CF00EA8D7B /* LIALinkedInApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInApplication.h; sourceTree = "<group>"; };
-		05023C1224D346CF00EA8D7B /* LIALinkedInApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInApplication.m; sourceTree = "<group>"; };
-		05023C1324D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInAuthorizationViewController.h; sourceTree = "<group>"; };
-		05023C1424D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInAuthorizationViewController.m; sourceTree = "<group>"; };
-		05023C1524D346CF00EA8D7B /* LIALinkedInHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInHttpClient.h; sourceTree = "<group>"; };
-		05023C1624D346CF00EA8D7B /* LIALinkedInHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInHttpClient.m; sourceTree = "<group>"; };
-		05023C1724D346CF00EA8D7B /* NSString+LIAEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LIAEncode.h"; sourceTree = "<group>"; };
-		05023C1824D346CF00EA8D7B /* NSString+LIAEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LIAEncode.m"; sourceTree = "<group>"; };
-		05023C1924D346CF00EA8D7B /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
-		05023C1C24D346CF00EA8D7B /* LinkedinSwiftConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinSwiftConfiguration.h; sourceTree = "<group>"; };
-		05023C1D24D346CF00EA8D7B /* LinkedinSwiftConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinSwiftConfiguration.m; sourceTree = "<group>"; };
-		05023C1E24D346CF00EA8D7B /* LSLinkedinToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLinkedinToken.h; sourceTree = "<group>"; };
-		05023C1F24D346CF00EA8D7B /* LSLinkedinToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLinkedinToken.m; sourceTree = "<group>"; };
-		05023C2024D346CF00EA8D7B /* LSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResponse.h; sourceTree = "<group>"; };
-		05023C2124D346CF00EA8D7B /* LSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSResponse.m; sourceTree = "<group>"; };
-		05023C2224D346CF00EA8D7B /* LinkedinNativeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinNativeClient.h; sourceTree = "<group>"; };
-		05023C2324D346CF00EA8D7B /* LinkedinNativeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinNativeClient.m; sourceTree = "<group>"; };
-		05023C2424D346CF00EA8D7B /* LinkedinOAuthWebClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinOAuthWebClient.h; sourceTree = "<group>"; };
-		05023C2524D346CF00EA8D7B /* LinkedinOAuthWebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinOAuthWebClient.m; sourceTree = "<group>"; };
-		05023C2624D346CF00EA8D7B /* LinkedinSwiftHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedinSwiftHelper.h; sourceTree = "<group>"; };
-		05023C2724D346CF00EA8D7B /* LinkedinSwiftHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedinSwiftHelper.m; sourceTree = "<group>"; };
-		05023C2824D346CF00EA8D7B /* LSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHeader.h; sourceTree = "<group>"; };
-		05023C2924D346CF00EA8D7B /* LSTypesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTypesHeader.h; sourceTree = "<group>"; };
-		05023C2A24D346CF00EA8D7B /* NativeAppInstalledChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAppInstalledChecker.h; sourceTree = "<group>"; };
-		05023C2B24D346CF00EA8D7B /* NativeAppInstalledChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppInstalledChecker.m; sourceTree = "<group>"; };
-		05023C2C24D346CF00EA8D7B /* WebLoginOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoginOnly.h; sourceTree = "<group>"; };
-		05023C2D24D346CF00EA8D7B /* WebLoginOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoginOnly.m; sourceTree = "<group>"; };
+		054C89AB24D8016600B4CADE /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		054C89AD24D8017700B4CADE /* Medical Survey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Medical Survey.entitlements"; sourceTree = "<group>"; };
 		05FF04552440BAEE00AF5418 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05FF04562440BAEE00AF5418 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E66B1A61D682B4100DE7938 /* VendorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorCell.h; sourceTree = "<group>"; };
@@ -328,9 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EBC3971CCB281600BA8029 /* MessageUI.framework in Frameworks */,
+				054C89AC24D8016600B4CADE /* AuthenticationServices.framework in Frameworks */,
 				78FBC22460D6186E8EB3B885 /* libPods-SurveyAppMH.a in Frameworks */,
 				05023B5724D2C7D800EA8D7B /* WebKit.framework in Frameworks */,
-				05023C3224D346CF00EA8D7B /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,64 +309,6 @@
 				05023B6A24D326F000EA8D7B /* FHSTwitterEngine.m */,
 			);
 			path = FHSTwitterEngine;
-			sourceTree = "<group>";
-		};
-		05023C0F24D346CF00EA8D7B /* LinkedinSwift */ = {
-			isa = PBXGroup;
-			children = (
-				05023C1024D346CF00EA8D7B /* IOSLinkedInAPI */,
-				05023C1924D346CF00EA8D7B /* linkedin-sdk.framework */,
-				05023C1A24D346CF00EA8D7B /* LinkedinSwift */,
-			);
-			path = LinkedinSwift;
-			sourceTree = "<group>";
-		};
-		05023C1024D346CF00EA8D7B /* IOSLinkedInAPI */ = {
-			isa = PBXGroup;
-			children = (
-				05023C1124D346CF00EA8D7B /* LIALinkedInApplication.h */,
-				05023C1224D346CF00EA8D7B /* LIALinkedInApplication.m */,
-				05023C1324D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.h */,
-				05023C1424D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.m */,
-				05023C1524D346CF00EA8D7B /* LIALinkedInHttpClient.h */,
-				05023C1624D346CF00EA8D7B /* LIALinkedInHttpClient.m */,
-				05023C1724D346CF00EA8D7B /* NSString+LIAEncode.h */,
-				05023C1824D346CF00EA8D7B /* NSString+LIAEncode.m */,
-			);
-			path = IOSLinkedInAPI;
-			sourceTree = "<group>";
-		};
-		05023C1A24D346CF00EA8D7B /* LinkedinSwift */ = {
-			isa = PBXGroup;
-			children = (
-				05023C1B24D346CF00EA8D7B /* Entities */,
-				05023C2224D346CF00EA8D7B /* LinkedinNativeClient.h */,
-				05023C2324D346CF00EA8D7B /* LinkedinNativeClient.m */,
-				05023C2424D346CF00EA8D7B /* LinkedinOAuthWebClient.h */,
-				05023C2524D346CF00EA8D7B /* LinkedinOAuthWebClient.m */,
-				05023C2624D346CF00EA8D7B /* LinkedinSwiftHelper.h */,
-				05023C2724D346CF00EA8D7B /* LinkedinSwiftHelper.m */,
-				05023C2824D346CF00EA8D7B /* LSHeader.h */,
-				05023C2924D346CF00EA8D7B /* LSTypesHeader.h */,
-				05023C2A24D346CF00EA8D7B /* NativeAppInstalledChecker.h */,
-				05023C2B24D346CF00EA8D7B /* NativeAppInstalledChecker.m */,
-				05023C2C24D346CF00EA8D7B /* WebLoginOnly.h */,
-				05023C2D24D346CF00EA8D7B /* WebLoginOnly.m */,
-			);
-			path = LinkedinSwift;
-			sourceTree = "<group>";
-		};
-		05023C1B24D346CF00EA8D7B /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				05023C1C24D346CF00EA8D7B /* LinkedinSwiftConfiguration.h */,
-				05023C1D24D346CF00EA8D7B /* LinkedinSwiftConfiguration.m */,
-				05023C1E24D346CF00EA8D7B /* LSLinkedinToken.h */,
-				05023C1F24D346CF00EA8D7B /* LSLinkedinToken.m */,
-				05023C2024D346CF00EA8D7B /* LSResponse.h */,
-				05023C2124D346CF00EA8D7B /* LSResponse.m */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		05FF04542440BAEE00AF5418 /* View */ = {
@@ -478,6 +383,7 @@
 		80115AD01C8ED79B00D1BFDB = {
 			isa = PBXGroup;
 			children = (
+				054C89AD24D8017700B4CADE /* Medical Survey.entitlements */,
 				1E75E5F31D6C1B51008C952F /* _CDPreferences.m */,
 				80115B001C8ED84200D1BFDB /* Frameworks */,
 				80115ADB1C8ED79B00D1BFDB /* SurveyApp */,
@@ -566,7 +472,6 @@
 		80115AF91C8ED82B00D1BFDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				05023C0F24D346CF00EA8D7B /* LinkedinSwift */,
 				05023B6624D326F000EA8D7B /* FHSTwitterEngine */,
 				80115AFA1C8ED82B00D1BFDB /* AppDelegate */,
 				804503951CC4A7620080F5CE /* Base64 */,
@@ -599,6 +504,7 @@
 		80115B001C8ED84200D1BFDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				054C89AB24D8016600B4CADE /* AuthenticationServices.framework */,
 				05023B5624D2C7D800EA8D7B /* WebKit.framework */,
 				80EBC3961CCB281600BA8029 /* MessageUI.framework */,
 				66DD7689C8F5642428917261 /* libPods-SurveyAppMH.a */,
@@ -928,14 +834,10 @@
 			files = (
 				3A1DED5F1FD9507200954540 /* Rating.m in Sources */,
 				1E75E5F41D6C1B51008C952F /* _CDPreferences.m in Sources */,
-				05023C3424D346CF00EA8D7B /* LSLinkedinToken.m in Sources */,
-				05023C3824D346CF00EA8D7B /* LinkedinSwiftHelper.m in Sources */,
 				80115AFF1C8ED82B00D1BFDB /* AppDelegate.m in Sources */,
 				804F19E91C99385C001837C9 /* SurveyResponse.m in Sources */,
-				05023C3624D346CF00EA8D7B /* LinkedinNativeClient.m in Sources */,
 				804F19F61C9978B0001837C9 /* _CDScoreMatrix.m in Sources */,
 				804091A31C8EF60F007357B7 /* StartSurveyVC.m in Sources */,
-				05023C2E24D346CF00EA8D7B /* LIALinkedInApplication.m in Sources */,
 				801073F01C97D5D800D098C7 /* _CDOrganizationType.m in Sources */,
 				05023B6C24D326F000EA8D7B /* FHSTwitterEngine.m in Sources */,
 				8045039B1CC4A7620080F5CE /* NSString+Base64.m in Sources */,
@@ -944,13 +846,11 @@
 				8012C1341CABD9F10011FC6E /* ScoreVC.m in Sources */,
 				80086CBD1C9AB4990057AE05 /* CDSurveys.m in Sources */,
 				804F19F71C9978B0001837C9 /* CDPreferences.m in Sources */,
-				05023C3324D346CF00EA8D7B /* LinkedinSwiftConfiguration.m in Sources */,
 				3A8357761FE3A34D00EFB863 /* ExitVC.m in Sources */,
 				804F19F81C9978B0001837C9 /* CDScoreMatrix.m in Sources */,
 				3A1DED651FD9541D00954540 /* CDRating.m in Sources */,
 				8005BC1E1C9019C8007D4AFE /* UITextField+TextPadding.m in Sources */,
 				804F19E01C992E4B001837C9 /* SurveyType.m in Sources */,
-				05023C3924D346CF00EA8D7B /* NativeAppInstalledChecker.m in Sources */,
 				3A1DED621FD952A300954540 /* _CDRating.m in Sources */,
 				801073F71C97E93A00D098C7 /* CDSurveyType.m in Sources */,
 				804503941CC49E440080F5CE /* ProfileVC.m in Sources */,
@@ -960,14 +860,11 @@
 				804091641C8EE1A4007357B7 /* NetworkAvailability.m in Sources */,
 				804091A61C8EFE6D007357B7 /* VendorVC.m in Sources */,
 				80086CBC1C9AB4990057AE05 /* CDSurveyResponse.m in Sources */,
-				05023C3A24D346CF00EA8D7B /* WebLoginOnly.m in Sources */,
 				80086CA91C9A6B2A0057AE05 /* Questions.m in Sources */,
 				80086CA51C9A6B170057AE05 /* _CDQuestions.m in Sources */,
-				05023C2F24D346CF00EA8D7B /* LIALinkedInAuthorizationViewController.m in Sources */,
 				8040916C1C8EE227007357B7 /* HomeVC.m in Sources */,
 				8005BC1A1C900786007D4AFE /* RegistrationVC.m in Sources */,
 				80892B541C91A2FE00BC5CB2 /* WebServiceResponse.m in Sources */,
-				05023C3024D346CF00EA8D7B /* LIALinkedInHttpClient.m in Sources */,
 				801073C51C97C36300D098C7 /* Vendors.m in Sources */,
 				80892B4A1C91A1EC00BC5CB2 /* NSManagedObject+CoreDataActive.m in Sources */,
 				801073EB1C97D51000D098C7 /* OrganizationType.m in Sources */,
@@ -978,7 +875,6 @@
 				8045039A1CC4A7620080F5CE /* NSData+Base64.m in Sources */,
 				809931AC1C92ED34003C5FE2 /* ExtendedVC.m in Sources */,
 				80115AEA1C8ED79B00D1BFDB /* Medical Survey.xcdatamodeld in Sources */,
-				05023C3124D346CF00EA8D7B /* NSString+LIAEncode.m in Sources */,
 				804091631C8EE1A4007357B7 /* NSString+Extensions.m in Sources */,
 				80086CBB1C9AB4990057AE05 /* _CDSurveys.m in Sources */,
 				801073E61C97C86000D098C7 /* Roles.m in Sources */,
@@ -986,7 +882,6 @@
 				3A8357731FE39EE000EFB863 /* SubmitVC.m in Sources */,
 				801073F61C97E93A00D098C7 /* _CDSurveyType.m in Sources */,
 				80086CBA1C9AB4990057AE05 /* _CDSurveyResponse.m in Sources */,
-				05023C3524D346CF00EA8D7B /* LSResponse.m in Sources */,
 				804091621C8EE1A4007357B7 /* Function.m in Sources */,
 				80892B491C91A1EC00BC5CB2 /* CoreDataHelper.m in Sources */,
 				8014C25E1C9131BF00521E06 /* QuestionsVC.m in Sources */,
@@ -1002,7 +897,6 @@
 				801CC47D1C9BC59800720BBB /* KeyPerformanceCell.m in Sources */,
 				80FC77B51C96908200A5B615 /* MISDropdownViewController.m in Sources */,
 				1E66B1A81D682B4100DE7938 /* VendorCell.m in Sources */,
-				05023C3724D346CF00EA8D7B /* LinkedinOAuthWebClient.m in Sources */,
 				8012C1371CABE2F10011FC6E /* LoyaltyQuestionsVC.m in Sources */,
 				804091661C8EE1A4007357B7 /* UIView+RunTimeAttributes.m in Sources */,
 				801073F11C97D5D800D098C7 /* CDOrganizationType.m in Sources */,
@@ -1132,10 +1026,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CODE_SIGN_ENTITLEMENTS = "Medical Survey.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = FPSA3FLFU4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1180,10 +1075,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CODE_SIGN_ENTITLEMENTS = "Medical Survey.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = FPSA3FLFU4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

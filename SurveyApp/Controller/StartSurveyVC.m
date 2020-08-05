@@ -271,7 +271,7 @@
                 
             case 3:
             {
-                if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] ||[Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin] )
+                if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] ||[Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsAppleLogin] )
 
                 {
                     [Function setBooleanValueToUserDefaults:YES ForKey:kIsEditingProfile];
@@ -435,7 +435,7 @@
     btnSettings.tintColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = btnSettings;
     
-    if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] ||[Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin] )
+    if ([Function getBooleanValueFromUserDefaults_ForKey:kIsFacebookLogin] ||[Function getBooleanValueFromUserDefaults_ForKey:kIsGoogleLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsTwitterLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsLinkedinLogin]||[Function getBooleanValueFromUserDefaults_ForKey:kIsAppleLogin] )
 
         dropdownMenuView = [[MISDropdownMenuView alloc] initWithItems:@[@"Key Performance Indicators", @"Scoring Keys", @"Vendors", @"Edit Profile", @"Support", @"Logout"]];
     else
