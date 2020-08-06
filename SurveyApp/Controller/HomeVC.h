@@ -35,4 +35,6 @@ static NSString * const kClientId = @"688992366945-4nde42cphb4045u9m81i2d0vhg03l
 
 @property (weak, nonatomic) IBOutlet UIImageView *btnLinkedinLogin;
 
+@property (weak, nonatomic) IBOutlet UIView *viewAppleLogin;
+
 @end

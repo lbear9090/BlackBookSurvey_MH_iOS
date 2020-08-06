@@ -27,14 +27,16 @@
 
     NSString *accessToken;
     LinkedinSwiftHelper *linkedinHelper;
+    ASAuthorizationAppleIDButton *appleIDButton;
 }
 
 @end
 
 @implementation HomeVC
 
-@synthesize btnFacebookLogin, btnGoogleLogin, btnTwitterLogin, btnLinkedinLogin;
+@synthesize btnFacebookLogin, btnGoogleLogin, btnTwitterLogin, btnLinkedinLogin, viewAppleLogin;
 NSString* const setCurrentIdentifier = @"setCurrentIdentifier";
+
 #pragma mark - View Life Cycle
 
 - (void)viewDidLoad
@@ -78,12 +80,16 @@ NSString* const setCurrentIdentifier = @"setCurrentIdentifier";
     signIn.presentingViewController = self;
 //    self.statusField.text = @"Initialized auth2...";
     
+    appleIDButton = [ASAuthorizationAppleIDButton new];
+    
+    [self.view addSubview:appleIDButton];
+    [appleIDButton addTarget:self action:@selector(btnAppleSignIn:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    appleIDButton.frame = viewAppleLogin.frame;
     [self setupNavigation];
 }
 -(void)viewDidDisappear:(BOOL)animated{
@@ -381,7 +387,7 @@ NSString* const setCurrentIdentifier = @"setCurrentIdentifier";
             [[WebServiceConnector alloc] init:WSCheckExistingUser withParameters:postDictionary withObject:self withSelector:@selector(getCheckExistingUserResponse:) forServiceType:@"JSON" showDisplayMsg:nil];
         }
     } else if ([authorization.credential isKindOfClass:[ASPasswordCredential class]]) {
-        ASPasswordCredential *passwordCredential = authorization.credential;
+//        ASPasswordCredential *passwordCredential = authorization.credential;
 //        NSString *user = passwordCredential.user;
 //        NSString *password = passwordCredential.password;
         
